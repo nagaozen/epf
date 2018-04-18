@@ -1,0 +1,9 @@
+[
+	{
+		"id": "ExamplePlugin",
+		"path": "/lib/evolved/asp/epf/Example",
+		"extends": {
+			"Global": true
+		}
+	}
+]

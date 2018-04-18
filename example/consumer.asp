@@ -1,7 +1,7 @@
 <!--#include virtual="/lib/axe/base.asp"-->
 <!--#include virtual="/lib/axe/classes/interface.asp"-->
 <!--#include virtual="/lib/axe/classes/Parsers/json2.asp"-->
-<!--#include virtual="/lib/evolved/asp/base.asp"-->
+<!--#include virtual="/lib/evolved/asp/opinionated.asp"-->
 <!--#include virtual="/lib/evolved/asp/epf/manager.asp"-->
 <!--#include virtual="/lib/evolved/asp/epf/interface.asp"-->
 <%
@@ -41,7 +41,7 @@ sub main
 
 	' action!
 	with Ctx.Actors
-		.set "result", .result & "〈Hi, I'm the main action (standard)〉"
+		.set "result", .result & "〈Hi, I'm the main action (standard) content〉"
 	end with
 
 	' invoke plugins after action

@@ -38,7 +38,7 @@ class ExamplePlugin' implements IPlugin
 
 	private sub on_Global_main_afterAction(byRef Context)
 		with Context.Actors
-			.set "result", .result & " ｢ content injected by the ExamplePlugin ｣ "
+			.set "result", .result & " ｢ onAfterAction content injected by the ExamplePlugin ｣ "
 		end with
 	end sub
 

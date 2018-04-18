@@ -4,6 +4,16 @@
 '
 ' Evolved Classic ASP Plugins Framework interface definition.
 '
+' Versioning System:
+'
+' Semantic Versioning 2.0.0 which is, in practice, given a version number MAJOR.MINOR.PATCH:
+'
+' 	- A MAJOR increment requires a change in your program (API Change),
+' 	- A MINOR increment should not break your app, but make additional functionality available,
+' 	- A PATCH increment fixes a bug, so just replace in place with the latest version.
+'
+' More details at <http://semver.org/>.
+'
 ' License:
 '
 ' This file is part of Evolved Classic ASP Plugins Framework.

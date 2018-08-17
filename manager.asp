@@ -97,8 +97,10 @@ class PluginManager
 			if not isEmpty( Plugin.extends.get( controller ) ) then
 				if isEmpty( Application( []( "Plugins.{0}", Plugin.id ) ) ) then _
 					Application( []( "Plugins.{0}", Plugin.id ) ) = mid( loadTextFile( Server.mapPath( []( "{0}/plugin.asp", Plugin.path ) ) ), 3 )
-				executeGlobal Application( []( "Plugins.{0}", Plugin.id ) )
-				execute []( "Listeners.set ""{0}"", new {0}", Plugin.id )
+				if not Listeners.hasOwnProperty(Plugin.id) then
+					executeGlobal Application( []( "Plugins.{0}", Plugin.id ) )
+					execute []( "Listeners.set ""{0}"", new {0}", Plugin.id )
+				end if
 			end if
 			set Plugin = nothing
 		next
